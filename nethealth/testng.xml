@@ -1,0 +1,16 @@
+<!-- testng.xml -->
+<suite name="ParallelSuite" parallel="tests" thread-count="3">
+    <test name="ChromeRun">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestRunner.parallelRunner"/>
+        </classes>
+    </test>
+    <test name="FirefoxRun">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Testrunner.parallelRunner"/>
+        </classes>
+    </test>
+</suite>
+
